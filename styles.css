@@ -1,0 +1,87 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.button1:hover {
+  background-color: blue;
+  transition: background-color 0.3s ease;
+ ;
+}
+
+.button2:active{
+  background-color: #ff2600;
+}
+.button3:focus{
+  background-color: gold;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #000000;
+  color: rgb(0, 183, 255);
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+
+ul, li, p {
+  color: #b65252;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+h1 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px) ;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+h2 {
+  animation-name: slideInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+  animation-direction: left;
+  animation-fill-mode: forwards
+  
+  transform: translate(-100px);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+ 
+}
